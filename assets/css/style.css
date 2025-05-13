@@ -129,8 +129,15 @@ section:hover{
     font-size: 2.5rem;
 }
 
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+}
 
-
+.description{
+    font-size: 18px;
+    
+}
 
 
 /*  Contacts Modal Popup */
@@ -196,7 +203,25 @@ footer{
 
 
 /* Mobile Compatibility */
-@media (max-width: 700px) {
+@media (max-width: 950px){
+    .title{
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    .description{
+        font-size: 14px;
+    
+    }
+
+    .training{
+        width: 250px;
+        height: 250px;
+        
+        }
+}
+
+@media (max-width: 750px) {
     
     
     
@@ -207,6 +232,10 @@ footer{
         gap: calc(2vw + 0.9rem); 
         padding: 0.75;
     }
+
+    .title{
+    font-size: 1rem;
+}
 
     a{
         color: #fff;
@@ -257,17 +286,16 @@ footer{
     flex-direction: column; 
     }
 
+    .title{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .description{
+        font-size: 14px;
+    }
 }
-
-@media (max-width: 400px){
-    .link a{
-    font-size: 9px;
-    }
-
-    .nav-links{
-        gap: 1px;
-    }
-}   
+ 
 
 @media (max-width: 500px){
     .link a{
@@ -278,3 +306,21 @@ footer{
         gap: 1px;
     }
 }   
+
+@media (max-width: 400px){
+    .link a{
+    font-size: 9px;
+    }
+
+    .nav-links{
+        gap: 1px;
+    }
+    .title{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .description{
+        font-size: 12px;
+    }
+}  
