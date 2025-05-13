@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    outline: none;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 4rem;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: #18181B;
+}
+
+/* Hamburger Icon */
+.icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 25px;
+        cursor: pointer;
+        z-index: 10;
+}
+
+ /* Top Navigation */
+nav{
+    display: flex;
+    justify-content: center;
+  
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 50rem;
+    position: fixed;
+    background-color: rgb(27, 27, 31, 50%);
+    margin: 0;
+}
+
+.link a{
+    position: relative;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.link a:hover{
+    background-color: #1d4ed8;
+    transition: all 0.2s ease-in;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+
+
+
+/* Welcome Text */
+header{
+    text-align: center;
+    color: #fff;
+    padding: 5rem;
+    background-color: #232327;
+}
+
+
+/* Section Parts */
+.profile-container,.education-container,.training-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+}
+
+.profile,.education{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+}
+
+.training{
+   width: 500px;
+  height: 300px;
+  object-fit: cover;
+  
+  margin-left: 10px;
+  display: flex; 
+}
+
+section {
+    width: 90%;            
+    max-width: 1000px;    
+    margin: 2rem auto;     
+    padding: 2rem;
+    background-color: #232327;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+}
+
+section:hover{
+    background-color: #2f2f36;
+    transition: all 0.3s ease-in;
+}
+
+
+.name{
+    font-size: 2.5rem;
+}
+
+
+
+
+
+/*  Contacts Modal Popup */
+.buttonModal {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modalContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal input,
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Mobile Compatibility */
+@media (max-width: 700px) {
+    
+    
+    
+    .nav-links{
+        list-style: none;
+        display: none;
+        align-items: center;
+        gap: calc(2vw + 0.9rem); 
+        padding: 0.75;
+    }
+
+    a{
+        color: #fff;
+        padding-bottom: 1rem;
+        font-size: 15px;
+        display: flex;
+    }
+
+    .link a{
+    font-size: 15px;
+    }
+
+    .profile-container,.education-container,.training-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 1000px;
+        flex-direction: column;
+        }
+
+    .profile,.education{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 10px;
+        display: flex;
+        }
+
+    .name{
+        font-size: calc(4vw + 0.6rem);
+    }
+
+}

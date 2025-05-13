@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Hambuber Icon -->
+    <div class="icon-wrapper" id="icon" onclick="toggle()">
+        <img src="assets/img/hamburger-svgrepo-com.svg" class="icon">
+    </div>
+
+   
+    <!-- Top Navigation -->
+    <nav>
+        <ul class="nav-links">
+                <li class="link"><a href="#profile" class="head">Profile</a></li>
+                <li class="link"><a href="#education" class="head">Education</a></li>
+                <li class="link"><a href="#trainings" class="head">Trainings</a></li>
+                <li class="link"><a href="pages/index.html" class="head">Projects</a></li>
+                <li class="link"><a href="#contacts" class="head" id="openModal">Contacts</a></li>
+        </ul>
+    </nav>
+
+    
+    <!-- Welcome Text -->
+    <header>
+        <p style="font-size: 1.5rem;">Hello, I'm</p>
+        <h1 class="name">Yojan Christ Barnes</h1>
+        <p style="font-style: italic;">call me yojan</p>
+        <p>AND THIS IS MY PORTFOLIO</p>
+    </header>
+    
+
+
+    <!-- Profile Section -->
+    <section  id="profile">
+        <h1>Profile</h1><br>
+        <div class="profile-container">  
+
+            <img src="assets/img/profile.jpg" class="profile" alt="Profile Picture">
+
+            <p>
+                Hi, I'm a second-year college student pursuing a degree in 
+                Computer Engineering Technology. I'm passionate about technology, coding,
+                and continuously learning how things work behind the scenes.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <h1>Education</h1><br>
+        <div class="education-container">
+            <img src="assets/img/education Logo.png" class="education">
+
+            <p>
+                <span style="font-size: 2rem;">CITE Technical Institute, Inc</span><br><br>
+                I'm currently studying at CITE Technical Institute in Cebu City,
+                a school known for its strong technical training and values-based education. Through its dual training system, I gain both classroom learning and real-world industry experience, 
+                preparing me to be a skilled and disciplined professional in the tech field.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Trainings -->
+    <section id="trainings">
+        <h1>Trainings</h1><br>
+        
+        <div class="training-container">
+            <img src="assets/img/training.jpg" class="training">
+            <p>
+                <span style="font-size: 2rem;">Alliance Software Inc.</span><br><br>
+                I participated in a Low-Code Programming Training Program conducted by Alliance Software Inc. 
+                from August to December 2024. The program focused on tools like 
+                Power Automate, Power Apps, Power BI, and Mendix, equipping us with 
+                in-demand skills in software development. Led by industry experts, the training provided hands-on experience and real-world insights, helping bridge the gap between academic learning and workplace application.
+            </p>
+        </div>
+    </section>
+      
+    <!-- Contacts Modal Popup -->
+    <div class="modalContainer" id="modalContainer">
+        <div class="modal">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+                <input type="text" placeholder="Your Name" id="name" name="name" required />
+                <input type="email" placeholder="Your Email" id="email" name="email" required />
+                <textarea placeholder="Your Message" id="message" name="message" rows="4" required></textarea>
+
+                <div class="button-group">
+                    <button type="submit" id="submitBtn" class="buttonModal">Submit</button>
+                    <button type="button" id="closeModal" class="buttonModal">Cancel</button>
+                </div>
+        </form>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <section>
+                <p>Copyright © 2025 Yojan Christ Barnes. All Rights Reserved</p>
+                <a href="https://github.com/YojanBarnes"><img src="assets/img/githubLogo.png"></a>
+            </section>    
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+    <!-- Modem Email Function -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "bQx1zDtQC-ilyBn_s",
+      });
+   })();
+</script>
+</body>
+</html>
+
