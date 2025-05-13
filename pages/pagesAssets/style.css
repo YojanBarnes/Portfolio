@@ -139,7 +139,9 @@ footer{
     gap: calc(2vw + 0.9rem); 
     padding: 0.75;
     }
-
+    .link a{
+    font-size: 12px;
+    }
 
     a{
         color: #fff;
@@ -147,9 +149,18 @@ footer{
         display: flex;
 
     }
-
     .name{
         font-size: calc(4vw + 0.6rem);
     }
 
 }
+
+@media (max-width: 500px){
+    .link a{
+    font-size: 13px;
+    }
+
+    .nav-links{
+        gap: 1px;
+    }
+}   
