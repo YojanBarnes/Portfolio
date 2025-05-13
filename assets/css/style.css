@@ -203,6 +203,11 @@ footer{
 }
 
 
+.footerP{
+    font-size: 1rem;
+}
+
+
 /* Mobile Compatibility */
 @media (max-width: 950px){
     .title{
@@ -236,7 +241,7 @@ footer{
 
     .title{
     font-size: 1rem;
-}
+    }
 
     a{
         color: #fff;
@@ -295,6 +300,10 @@ footer{
     .description{
         font-size: 14px;
     }
+
+    .footerP{
+    font-size: 0.8rem;
+    }
 }
  
 
@@ -306,6 +315,11 @@ footer{
     .nav-links{
         gap: 1px;
     }
+
+    .footerP{
+    font-size: 0.5rem;
+    }
+
 }   
 
 @media (max-width: 400px){
@@ -323,5 +337,8 @@ footer{
 
     .description{
         font-size: 12px;
+    }
+    .footerP{
+    font-size: 0.4rem;
     }
 }  
