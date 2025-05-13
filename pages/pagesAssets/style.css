@@ -155,9 +155,9 @@ footer{
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 400px){
     .link a{
-    font-size: 13px;
+    font-size: 10px;
     }
 
     .nav-links{
