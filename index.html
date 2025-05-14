@@ -9,7 +9,7 @@
 <body>
     <!-- Hambuber Icon -->
     <div class="icon-wrapper" id="icon" onclick="toggle()">
-        <img src="assets/img/hamburger-svgrepo-com.svg" class="icon">
+        <img src="assets/img/hamburger-svgrepo-com.svg" class="icon" alt="topNav">
     </div>
 
    
@@ -19,7 +19,7 @@
                 <li class="link"><a href="#profile" class="head">Profile</a></li>
                 <li class="link"><a href="#education" class="head">Education</a></li>
                 <li class="link"><a href="#trainings" class="head">Trainings</a></li>
-                <li class="link"><a href="pages/index.html" class="head">Projects</a></li>
+                <li class="link"><a href="#projects" class="head">Projects</a></li>
                 <li class="link"><a href="#" class="head" id="openModal">Contacts</a></li>
         </ul>
     </nav>
@@ -37,7 +37,7 @@
 
     <!-- Profile Section -->
     <section  id="profile">
-        <h1>Profile</h1><br>
+        <h2>Profile</h2><br>
         <div class="profile-container">  
 
             <img src="assets/img/profile.jpg" class="profile" alt="Profile Picture">
@@ -56,9 +56,9 @@
 
     <!-- Education -->
     <section id="education">
-        <h1>Education</h1><br>
+        <h2>Education</h2><br>
         <div class="education-container">
-            <img src="assets/img/education Logo.png" class="education">
+            <img src="assets/img/educationLogo.png" class="education" alt="educationLogo">
 
             <p>
                 <span class="title">CITE Technical Institute, Inc</span><br><br>
@@ -74,10 +74,10 @@
 
     <!-- Trainings -->
     <section id="trainings">
-        <h1>Trainings</h1><br>
+        <h2>Trainings</h2><br>
         
         <div class="training-container">
-            <img src="assets/img/training.jpg" class="training">
+            <img src="assets/img/training.jpg" class="training" alt="trainingLogo">
             <p>
                 <span class="title">Alliance Software Inc.</span><br><br>
                 <span class="description">
@@ -97,9 +97,9 @@
         <div class="modal">
         <h2>Contact Me</h2>
 
-        <form id="contactForm">
-                <input type="text" placeholder="Your Name" id="name" name="name" required />
-                <input type="email" placeholder="Your Email" id="email" name="email" required />
+        <form id="contactForm" autocomplete="on">
+                <input type="text" placeholder="Your Name" id="name" name="nameInput" required>
+                <input type="email" placeholder="Your Email" id="email" name="emailInput" required>
                 <textarea placeholder="Your Message" id="message" name="message" rows="4" required></textarea>
 
                 <div class="button-group">
@@ -111,13 +111,41 @@
         </div>
     </div>
 
+    <div>
+        <section>
+            <h2 class="projects" id="projects">Projects</h2>
+        </section>
+    </div>
+
+    <div>
+        <section class="section-projects">
+            <img src="assets/img/projectImg/countingProject.PNG" class="img" alt="countingProject"><br>
+            <h2>Counting Code</h2>
+            <p>Made with JS</p><br>
+            <button onclick="window.location.href='https://yojanbarnes.github.io/counterApp/'" class="button">Play</button>
+        </section>
+    </div>
+
+
+    <div>
+        <section class="section-projects">
+            <img src="assets/img/projectImg/weatherAppImg.PNG" class="img" alt="weatherAppProject"><br>
+            <h2>Weather App</h2>
+            <p>Made with JS with API</p>
+            <p>Followed From Youtube</p><br>
+            <button onclick="window.location.href='https://yojanbarnes.github.io/weatherProject/'" class="button">Play</button>
+        </section>
+    </div>
+
+
+
+
+
     <!-- Footer -->
     <footer>
         <div>
-            <section>
                 <p class="footerP">Copyright © 2025 Yojan Christ Barnes. All Rights Reserved</p>
-                <a href="https://github.com/YojanBarnes" class="footerLogo"><img src="assets/img/githubLogo.png"></a>
-            </section>    
+                <a href="https://github.com/YojanBarnes" class="footerLogo"><img src="assets/img/githubLogo.png" alt="githubLogo"></a>   
         </div>
     </footer>
 
@@ -126,11 +154,9 @@
 
     <!-- Modal Email Function -->
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
         (function(){
              emailjs.init({
             publicKey: "bQx1zDtQC-ilyBn_s",
